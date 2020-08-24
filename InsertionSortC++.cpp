@@ -1,7 +1,7 @@
 /*
 	Name: Nicoh Carter
 	Purpose: Insertion Sort
-    Language: C
+    Language: C++
 */
 #include <bits/stdc++.h>
 #include <iostream>
