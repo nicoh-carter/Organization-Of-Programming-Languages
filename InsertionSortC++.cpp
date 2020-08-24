@@ -1,12 +1,13 @@
 /*
 	Name: Nicoh Carter
-	Purpose:Insertion Sort
+	Purpose: Insertion Sort
     Language: C
 */
-#include <math.h>
-#include <stdio.h>
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
 
-void main()
+int main()
 {
     
     // An array of integers
@@ -14,9 +15,9 @@ void main()
 	int n = sizeof(array)/sizeof(array[0]);
 	
 	//Unsorted array
-	printf("Unsorted Array\n");
+	cout<<("Unsorted Array\n");
 	for (int i = 0; i < n; i++)
-			cout<<("%d ", array[i]);
+			cout<< array[i] << " ";
 		
     //Insertion Sort    
     for (int i = 1; i < n; i++)
@@ -31,6 +32,6 @@ void main()
 		// Sorted array
 		cout<<("\n\nSorted Array\n");
 		for (int i = 0; i < n; i++)
-			cout<<("%d ", array[i]);
-		cout<<(" ");
+			cout<< array[i] << " ";
+	return 0;
 }
