@@ -1,0 +1,36 @@
+<html>
+    <!--Name: Nicoh Carter -->
+    <!--Purpose: Insertion Sort-->
+    <!--Language: JavaScript-->
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type =  "text/javascript">
+            
+            //Insertion Sort
+            function insertionSort (a) {
+                for (var i = 0; i < a.length; i++){
+                    var temp = a[i];
+                    for (var j = i; j > 0 && temp < a[j-1]; j--)
+                        a[j] = a[j-1];
+                    a[j] = temp;
+                }
+                return a;
+            }
+            
+            //Unsorted Array
+            var array = new Array(34, 56, 4, 10, 77, 51, 93, 30, 5, 52);
+            document.write("Unsorted Array <br>");
+            for(var i = 0; i < array.length; i++)
+                document.write(array[i] + " ");
+            
+            //Sorted Array
+            document.write("<br> <br> Sorted Array <br>");
+            insertionSort(array);
+            for (var i = 0; i < array.length; i++)
+                document.write(array[i] + " ");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
